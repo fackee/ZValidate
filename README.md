@@ -2,7 +2,16 @@
 <h1>基础SpringMVC的参数校验框架</h1>
 
 
-使用方式：springMVC配置拦截器如下：
+使用方式：</br>
+添加pom依赖
+```
+ <dependency>
+      <groupId>org.zvalidate</groupId>
+      <artifactId>org-zvalidate</artifactId>
+      <version>1.0.0</version>
+  </dependency>
+```
+springMVC配置拦截器如下：
 ```
 <mvc:interceptors>
         <mvc:interceptor>
