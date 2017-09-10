@@ -1,3 +1,3 @@
 # ZValidate
-基础SpringMCV的参数校验框架
+基础SpringMVC的参数校验框架
 
