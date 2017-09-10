@@ -113,7 +113,7 @@ public class ValidateInterceptor implements HandlerInterceptor{
                                     //不合法修改parameter，返回相应提示
                                     ArrayList<String> values = paramMap.get(methodParameter.getParameterName());
                                     values.clear();
-                                    values.add("Parameter ERROR");
+                                    values.add(algorithms.Validate(inputValue));
                                     paramMap.replace(methodParameter.getParameterName(),values);
                                 }
                             }

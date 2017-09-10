@@ -39,7 +39,9 @@ public class IDCardAlgorithms implements Algorithms<IDCard>{
             char[] checkCodeArr={1,0,'X',9,8,7,6,5,4,3,2};
             int newCode=checkCodeArr[ (sigma % 11) ];
             newStr+=newCode;
-            message = newStr==inputVal ? VALIDATE_STATUS : "IDCard ERROR";
+            message = newStr.equals(inputVal) ? VALIDATE_STATUS : "IDCard ERROR";
+        }else{
+            message = "IDCard ERROR";
         }
         return message;
     }

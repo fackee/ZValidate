@@ -9,7 +9,7 @@ import org.zvalidate.annotation.Number;
 public class NemberAlgorithms implements Algorithms<Number>{
     @Override
     public void addAlgorithmsAnnotationMap() {
-        ALGORITHMS_HASH_MAP.put(NotNull.class,this.getClass());
+        ALGORITHMS_HASH_MAP.put(Number.class,this.getClass());
     }
 
     @Override
