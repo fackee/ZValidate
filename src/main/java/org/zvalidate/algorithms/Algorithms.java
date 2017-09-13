@@ -19,7 +19,7 @@ public interface Algorithms<T extends Annotation> {
     public final List<Class<? extends Annotation>> customAnnotations = new ArrayList<>();
 
     //自定义注解与注解相对应的过滤算法映射
-    public final HashMap<Class<? extends Annotation>,Class<? extends Algorithms>> ALGORITHMS_HASH_MAP = new HashMap<>();
+    public final Map<Class<? extends Annotation>,Class<? extends Algorithms>> ALGORITHMS_HASH_MAP = new ConcurrentHashMap<>();
 
     //添加自定义注解
     public void addAlgorithmsAnnotationMap();
